@@ -1,0 +1,835 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1527 ]
+[d frameptr 6 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"19 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+"80 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"58 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\memory.c
+[v _FLASH_ReadWord FLASH_ReadWord `(ui  1 e 2 0 ]
+"74
+[v _FLASH_WriteWord FLASH_WriteWord `(v  1 e 1 0 ]
+"91
+[v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
+"141
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
+"18 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 1 0 ]
+"23
+[v _wait_ms wait_ms `(v  1 e 1 0 ]
+"21 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\user.c
+[v _InitApp InitApp `(v  1 e 1 0 ]
+"69
+[v _set_leds_bottom set_leds_bottom `(v  1 e 1 0 ]
+"116
+[v _set_subdivision set_subdivision `(i  1 e 2 0 ]
+"142
+[v _set_leds_top set_leds_top `(v  1 e 1 0 ]
+"189
+[v _init_adc init_adc `(v  1 e 1 0 ]
+"196
+[v _adc_convert adc_convert `(ui  1 e 2 0 ]
+"203
+[v _init_pwm init_pwm `(v  1 e 1 0 ]
+"236
+[v _init_timer2 init_timer2 `(v  1 e 1 0 ]
+"243
+[v _init_timer0 init_timer0 `(v  1 e 1 0 ]
+"251
+[v _map map `(f  1 e 3 0 ]
+"255
+[v _modulation modulation `(i  1 e 2 0 ]
+[s S19 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"360 C:\Program Files (x86)\Microchip\xc8\v1.37\include\pic16f1527.h
+[s S28 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S33 . 1 `S19 1 . 1 0 `S28 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES33  1 e 1 @11 ]
+[s S150 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"492
+[u S159 . 1 `S150 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES159  1 e 1 @13 ]
+[s S171 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"614
+[u S180 . 1 `S171 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES180  1 e 1 @15 ]
+[s S205 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+`uc 1 RE4 1 0 :1:4 
+`uc 1 RE5 1 0 :1:5 
+`uc 1 RE6 1 0 :1:6 
+`uc 1 RE7 1 0 :1:7 
+]
+"675
+[u S214 . 1 `S205 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES214  1 e 1 @16 ]
+"1216
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+[s S946 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"1256
+[s S950 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S958 . 1 `S946 1 . 1 0 `S950 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES958  1 e 1 @28 ]
+[s S383 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1383
+[u S392 . 1 `S383 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES392  1 e 1 @141 ]
+[s S426 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1444
+[u S435 . 1 `S426 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES435  1 e 1 @142 ]
+[s S447 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1505
+[u S456 . 1 `S447 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES456  1 e 1 @143 ]
+[s S468 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 TRISE3 1 0 :1:3 
+`uc 1 TRISE4 1 0 :1:4 
+`uc 1 TRISE5 1 0 :1:5 
+`uc 1 TRISE6 1 0 :1:6 
+`uc 1 TRISE7 1 0 :1:7 
+]
+"1566
+[u S477 . 1 `S468 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES477  1 e 1 @144 ]
+[s S975 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1902
+[s S982 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S989 . 1 `S975 1 . 1 0 `S982 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES989  1 e 1 @149 ]
+[s S348 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF 1 0 :4:3 
+]
+"2096
+[s S352 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF0 1 0 :1:3 
+`uc 1 IRCF1 1 0 :1:4 
+`uc 1 IRCF2 1 0 :1:5 
+`uc 1 IRCF3 1 0 :1:6 
+]
+[u S360 . 1 `S348 1 . 1 0 `S352 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES360  1 e 1 @153 ]
+"2200
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"2219
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+[s S645 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+"2263
+[s S649 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+[s S657 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S660 . 1 `S645 1 . 1 0 `S649 1 . 1 0 `S657 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES660  1 e 1 @157 ]
+[s S617 . 1 `uc 1 ADPREF 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 ADCS 1 0 :3:4 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2338
+[s S622 . 1 `uc 1 ADPREF0 1 0 :1:0 
+`uc 1 ADPREF1 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 ADCS0 1 0 :1:4 
+`uc 1 ADCS1 1 0 :1:5 
+`uc 1 ADCS2 1 0 :1:6 
+]
+[u S629 . 1 `S617 1 . 1 0 `S622 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES629  1 e 1 @158 ]
+[s S244 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2521
+[u S253 . 1 `S244 1 . 1 0 ]
+[v _LATCbits LATCbits `VES253  1 e 1 @270 ]
+[s S579 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"2585
+[s S588 . 1 `uc 1 LATD 1 0 :8:0 
+]
+[u S590 . 1 `S579 1 . 1 0 `S588 1 . 1 0 ]
+[v _LATDbits LATDbits `VES590  1 e 1 @271 ]
+[s S682 . 1 `uc 1 CCP2SEL 1 0 :1:0 
+`uc 1 T3CKISEL 1 0 :1:1 
+]
+"2796
+[u S685 . 1 `S682 1 . 1 0 ]
+[v _APFCONbits APFCONbits `VES685  1 e 1 @285 ]
+[s S404 . 1 `uc 1 ANSB0 1 0 :1:0 
+`uc 1 ANSB1 1 0 :1:1 
+`uc 1 ANSB2 1 0 :1:2 
+`uc 1 ANSB3 1 0 :1:3 
+`uc 1 ANSB4 1 0 :1:4 
+`uc 1 ANSB5 1 0 :1:5 
+]
+"2880
+[s S411 . 1 `uc 1 ANSELB 1 0 :6:0 
+]
+[u S413 . 1 `S404 1 . 1 0 `S411 1 . 1 0 ]
+[v _ANSELBbits ANSELBbits `VES413  1 e 1 @397 ]
+[s S489 . 1 `uc 1 ANSE0 1 0 :1:0 
+`uc 1 ANSE1 1 0 :1:1 
+`uc 1 ANSE2 1 0 :1:2 
+]
+"2979
+[s S493 . 1 `uc 1 ANSELE 1 0 :3:0 
+]
+[u S495 . 1 `S489 1 . 1 0 `S493 1 . 1 0 ]
+[v _ANSELEbits ANSELEbits `VES495  1 e 1 @400 ]
+"3009
+[v _PMADRL PMADRL `VEuc  1 e 1 @401 ]
+"3028
+[v _PMADRH PMADRH `VEuc  1 e 1 @402 ]
+"3053
+[v _PMDATL PMDATL `VEuc  1 e 1 @403 ]
+"3072
+[v _PMDATH PMDATH `VEuc  1 e 1 @404 ]
+[s S1158 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+]
+"3107
+[u S1166 . 1 `S1158 1 . 1 0 ]
+[v _PMCON1bits PMCON1bits `VES1166  1 e 1 @405 ]
+"3146
+[v _PMCON2 PMCON2 `VEuc  1 e 1 @406 ]
+"5213
+[v _CCPR1 CCPR1 `VEus  1 e 2 @657 ]
+[s S691 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 DC1B 1 0 :2:4 
+]
+"5276
+[s S694 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+`uc 1 DC1B0 1 0 :1:4 
+`uc 1 DC1B1 1 0 :1:5 
+]
+[u S701 . 1 `S691 1 . 1 0 `S694 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES701  1 e 1 @659 ]
+"5320
+[v _CCPR2 CCPR2 `VEus  1 e 2 @664 ]
+[s S715 . 1 `uc 1 CCP2M 1 0 :4:0 
+`uc 1 DC2B 1 0 :2:4 
+]
+"5383
+[s S718 . 1 `uc 1 CCP2M0 1 0 :1:0 
+`uc 1 CCP2M1 1 0 :1:1 
+`uc 1 CCP2M2 1 0 :1:2 
+`uc 1 CCP2M3 1 0 :1:3 
+`uc 1 DC2B0 1 0 :1:4 
+`uc 1 DC2B1 1 0 :1:5 
+]
+[u S725 . 1 `S715 1 . 1 0 `S718 1 . 1 0 ]
+[v _CCP2CONbits CCP2CONbits `VES725  1 e 1 @666 ]
+"5427
+[v _CCPTMRS0 CCPTMRS0 `VEuc  1 e 1 @669 ]
+"5514
+[v _CCPTMRS1 CCPTMRS1 `VEuc  1 e 1 @670 ]
+"5601
+[v _CCPTMRS2 CCPTMRS2 `VEuc  1 e 1 @671 ]
+[s S517 . 1 `uc 1 TRISF0 1 0 :1:0 
+`uc 1 TRISF1 1 0 :1:1 
+`uc 1 TRISF2 1 0 :1:2 
+`uc 1 TRISF3 1 0 :1:3 
+`uc 1 TRISF4 1 0 :1:4 
+`uc 1 TRISF5 1 0 :1:5 
+`uc 1 TRISF6 1 0 :1:6 
+`uc 1 TRISF7 1 0 :1:7 
+]
+"5669
+[u S526 . 1 `S517 1 . 1 0 ]
+[v _TRISFbits TRISFbits `VES526  1 e 1 @780 ]
+[s S538 . 1 `uc 1 TRISG0 1 0 :1:0 
+`uc 1 TRISG1 1 0 :1:1 
+`uc 1 TRISG2 1 0 :1:2 
+`uc 1 TRISG3 1 0 :1:3 
+`uc 1 TRISG4 1 0 :1:4 
+]
+"5727
+[u S544 . 1 `S538 1 . 1 0 ]
+[v _TRISGbits TRISGbits `VES544  1 e 1 @781 ]
+"5756
+[v _CCPR3 CCPR3 `VEus  1 e 2 @785 ]
+[s S739 . 1 `uc 1 CCP3M 1 0 :4:0 
+`uc 1 DC3B 1 0 :2:4 
+]
+"5819
+[s S742 . 1 `uc 1 CCP3M0 1 0 :1:0 
+`uc 1 CCP3M1 1 0 :1:1 
+`uc 1 CCP3M2 1 0 :1:2 
+`uc 1 CCP3M3 1 0 :1:3 
+`uc 1 DC3B0 1 0 :1:4 
+`uc 1 DC3B1 1 0 :1:5 
+]
+[u S749 . 1 `S739 1 . 1 0 `S742 1 . 1 0 ]
+[v _CCP3CONbits CCP3CONbits `VES749  1 e 1 @787 ]
+"5863
+[v _CCPR4 CCPR4 `VEus  1 e 2 @792 ]
+[s S763 . 1 `uc 1 CCP4M 1 0 :4:0 
+`uc 1 DC4B 1 0 :2:4 
+]
+"5926
+[s S766 . 1 `uc 1 CCP4M0 1 0 :1:0 
+`uc 1 CCP4M1 1 0 :1:1 
+`uc 1 CCP4M2 1 0 :1:2 
+`uc 1 CCP4M3 1 0 :1:3 
+`uc 1 DC4B0 1 0 :1:4 
+`uc 1 DC4B1 1 0 :1:5 
+]
+[u S773 . 1 `S763 1 . 1 0 `S766 1 . 1 0 ]
+[v _CCP4CONbits CCP4CONbits `VES773  1 e 1 @794 ]
+"5970
+[v _CCPR5 CCPR5 `VEus  1 e 2 @796 ]
+[s S787 . 1 `uc 1 CCP5M 1 0 :4:0 
+`uc 1 DC5B 1 0 :2:4 
+]
+"6033
+[s S790 . 1 `uc 1 CCP5M0 1 0 :1:0 
+`uc 1 CCP5M1 1 0 :1:1 
+`uc 1 CCP5M2 1 0 :1:2 
+`uc 1 CCP5M3 1 0 :1:3 
+`uc 1 DC5B0 1 0 :1:4 
+`uc 1 DC5B1 1 0 :1:5 
+]
+[u S797 . 1 `S787 1 . 1 0 `S790 1 . 1 0 ]
+[v _CCP5CONbits CCP5CONbits `VES797  1 e 1 @798 ]
+[s S51 . 1 `uc 1 LATF0 1 0 :1:0 
+`uc 1 LATF1 1 0 :1:1 
+`uc 1 LATF2 1 0 :1:2 
+`uc 1 LATF3 1 0 :1:3 
+`uc 1 LATF4 1 0 :1:4 
+`uc 1 LATF5 1 0 :1:5 
+`uc 1 LATF6 1 0 :1:6 
+`uc 1 LATF7 1 0 :1:7 
+]
+"6094
+[u S60 . 1 `S51 1 . 1 0 ]
+[v _LATFbits LATFbits `VES60  1 e 1 @908 ]
+[s S107 . 1 `uc 1 LATG0 1 0 :1:0 
+`uc 1 LATG1 1 0 :1:1 
+`uc 1 LATG2 1 0 :1:2 
+`uc 1 LATG3 1 0 :1:3 
+`uc 1 LATG4 1 0 :1:4 
+]
+"6152
+[u S113 . 1 `S107 1 . 1 0 ]
+[v _LATGbits LATGbits `VES113  1 e 1 @909 ]
+[s S811 . 1 `uc 1 CCP6M 1 0 :4:0 
+`uc 1 DC6B 1 0 :2:4 
+]
+"7879
+[s S814 . 1 `uc 1 CCP6M0 1 0 :1:0 
+`uc 1 CCP6M1 1 0 :1:1 
+`uc 1 CCP6M2 1 0 :1:2 
+`uc 1 CCP6M3 1 0 :1:3 
+`uc 1 DC6B0 1 0 :1:4 
+`uc 1 DC6B1 1 0 :1:5 
+]
+[u S821 . 1 `S811 1 . 1 0 `S814 1 . 1 0 ]
+[v _CCP6CONbits CCP6CONbits `VES821  1 e 1 @1555 ]
+[s S835 . 1 `uc 1 CCP7M 1 0 :4:0 
+`uc 1 DC7B 1 0 :2:4 
+]
+"7986
+[s S838 . 1 `uc 1 CCP7M0 1 0 :1:0 
+`uc 1 CCP7M1 1 0 :1:1 
+`uc 1 CCP7M2 1 0 :1:2 
+`uc 1 CCP7M3 1 0 :1:3 
+`uc 1 DC7B0 1 0 :1:4 
+`uc 1 DC7B1 1 0 :1:5 
+]
+[u S845 . 1 `S835 1 . 1 0 `S838 1 . 1 0 ]
+[v _CCP7CONbits CCP7CONbits `VES845  1 e 1 @1558 ]
+[s S859 . 1 `uc 1 CCP8M 1 0 :4:0 
+`uc 1 DC8B 1 0 :2:4 
+]
+"8093
+[s S862 . 1 `uc 1 CCP8M0 1 0 :1:0 
+`uc 1 CCP8M1 1 0 :1:1 
+`uc 1 CCP8M2 1 0 :1:2 
+`uc 1 CCP8M3 1 0 :1:3 
+`uc 1 DC8B0 1 0 :1:4 
+`uc 1 DC8B1 1 0 :1:5 
+]
+[u S869 . 1 `S859 1 . 1 0 `S862 1 . 1 0 ]
+[v _CCP8CONbits CCP8CONbits `VES869  1 e 1 @1561 ]
+"8137
+[v _CCPR9 CCPR9 `VEus  1 e 2 @1562 ]
+[s S883 . 1 `uc 1 CCP9M 1 0 :4:0 
+`uc 1 DC9B 1 0 :2:4 
+]
+"8200
+[s S886 . 1 `uc 1 CCP9M0 1 0 :1:0 
+`uc 1 CCP9M1 1 0 :1:1 
+`uc 1 CCP9M2 1 0 :1:2 
+`uc 1 CCP9M3 1 0 :1:3 
+`uc 1 DC9B0 1 0 :1:4 
+`uc 1 DC9B1 1 0 :1:5 
+]
+[u S893 . 1 `S883 1 . 1 0 `S886 1 . 1 0 ]
+[v _CCP9CONbits CCP9CONbits `VES893  1 e 1 @1564 ]
+[s S907 . 1 `uc 1 CCP10M 1 0 :4:0 
+`uc 1 DC10B 1 0 :2:4 
+]
+"8307
+[s S910 . 1 `uc 1 CCP10M0 1 0 :1:0 
+`uc 1 CCP10M1 1 0 :1:1 
+`uc 1 CCP10M2 1 0 :1:2 
+`uc 1 CCP10M3 1 0 :1:3 
+`uc 1 DC10B0 1 0 :1:4 
+`uc 1 DC10B1 1 0 :1:5 
+]
+[u S917 . 1 `S907 1 . 1 0 `S910 1 . 1 0 ]
+[v _CCP10CONbits CCP10CONbits `VES917  1 e 1 @1567 ]
+"21 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\main.c
+[v _top_push_state top_push_state `i  1 e 2 0 ]
+"22
+[v _bottom_push_state bottom_push_state `i  1 e 2 0 ]
+"23
+[v _knob_1_pos knob_1_pos `i  1 e 2 0 ]
+"24
+[v _knob_2_pos knob_2_pos `i  1 e 2 0 ]
+"25
+[v _knob_3_pos knob_3_pos `i  1 e 2 0 ]
+"26
+[v _knob_4_pos knob_4_pos `i  1 e 2 0 ]
+"27
+[v _knob_5_pos knob_5_pos `i  1 e 2 0 ]
+"28
+[v _bypass_state bypass_state `i  1 e 2 0 ]
+"29
+[v _timer timer `VEi  1 e 2 0 ]
+"30
+[v _tap_timer tap_timer `VEi  1 e 2 0 ]
+"31
+[v _mod_timer mod_timer `VEi  1 e 2 0 ]
+"32
+[v _mod_counter mod_counter `i  1 e 2 0 ]
+"33
+[v _tap_iteration tap_iteration `i  1 e 2 0 ]
+"34
+[v _delay_time delay_time `VEi  1 e 2 0 ]
+"35
+[v _mod_delay_time mod_delay_time `i  1 e 2 0 ]
+"36
+[v _baseline_delay_time baseline_delay_time `i  1 e 2 0 ]
+"37
+[v _mod_value mod_value `i  1 e 2 0 ]
+"39
+[v _delayfound delayfound `i  1 e 2 0 ]
+"40
+[v _delay_counter delay_counter `i  1 e 2 0 ]
+"42
+[v _myBuf myBuf `[32]ui  1 e 64 0 ]
+"44
+[v _knob1_prev knob1_prev `i  1 e 2 0 ]
+"45
+[v _knob2_prev knob2_prev `i  1 e 2 0 ]
+"46
+[v _knob3_prev knob3_prev `i  1 e 2 0 ]
+"47
+[v _knob4_prev knob4_prev `i  1 e 2 0 ]
+"48
+[v _knob5_prev knob5_prev `i  1 e 2 0 ]
+"66
+[v _delay delay `[255]i  1 e 510 @9202 ]
+"67
+[v _B25k B25k `[40]i  1 e 80 0 ]
+"68
+[v _iB25k iB25k `[40]i  1 e 80 0 ]
+"69
+[v _tap tap `[10]l  1 e 40 0 ]
+"70
+[v _mod1 mod1 `[29]i  1 e 58 0 ]
+"71
+[v _mod2 mod2 `[29]i  1 e 58 0 ]
+"72
+[v _mod3 mod3 `[29]i  1 e 58 0 ]
+"73
+[v _mod4 mod4 `[29]i  1 e 58 0 ]
+"80
+[v _main main `(v  1 e 1 0 ]
+{
+"354
+[v main@adjusted_pot_value adjusted_pot_value `i  1 a 2 42 ]
+"308
+[v main@i_338 i `i  1 a 2 46 ]
+"293
+[v main@i_337 i `i  1 a 2 44 ]
+"268
+[v main@i i `i  1 a 2 40 ]
+"387
+} 0
+"23 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\system.c
+[v _wait_ms wait_ms `(v  1 e 1 0 ]
+{
+[v wait_ms@time time `ui  1 p 2 4 ]
+"25
+[v wait_ms@timel timel `l  1 s 4 timel ]
+"28
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 0 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 2 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 6 ]
+"129
+} 0
+"116 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\user.c
+[v _set_subdivision set_subdivision `(i  1 e 2 0 ]
+{
+[v set_subdivision@x x `i  1 p 2 0 ]
+[v set_subdivision@y y `i  1 p 2 2 ]
+"140
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 72 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 76 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 71 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 63 ]
+"73
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 5 ]
+"32
+[v ___awtoft@c c `i  1 p 2 0 ]
+"42
+} 0
+"142 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\user.c
+[v _set_leds_top set_leds_top `(v  1 e 1 0 ]
+{
+[v set_leds_top@x x `i  1 p 2 2 ]
+"187
+} 0
+"69
+[v _set_leds_bottom set_leds_bottom `(v  1 e 1 0 ]
+{
+[v set_leds_bottom@x x `i  1 p 2 2 ]
+"114
+} 0
+"255
+[v _modulation modulation `(i  1 e 2 0 ]
+{
+[v modulation@x x `i  1 p 2 14 ]
+[v modulation@y y `i  1 p 2 16 ]
+"259
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 6 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
+"53
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"11
+[v ___aldiv@quotient quotient `l  1 a 4 10 ]
+"12
+[v ___aldiv@sign sign `uc  1 a 1 9 ]
+[v ___aldiv@counter counter `uc  1 a 1 8 ]
+"6
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"42
+} 0
+"251 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\user.c
+[v _map map `(f  1 e 3 0 ]
+{
+[v map@x x `f  1 p 3 45 ]
+[v map@in_min in_min `f  1 p 3 48 ]
+[v map@in_max in_max `f  1 p 3 51 ]
+[v map@out_min out_min `f  1 p 3 54 ]
+[v map@out_max out_max `f  1 p 3 57 ]
+"253
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 2 ]
+"20
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 24 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 28 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 27 ]
+[v ___ftmul@exp exp `uc  1 a 1 23 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 13 ]
+[v ___ftmul@f2 f2 `f  1 p 3 16 ]
+"157
+} 0
+"56 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 40 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 44 ]
+[v ___ftdiv@exp exp `uc  1 a 1 43 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 39 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 29 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 32 ]
+"86
+} 0
+"86 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 12 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 11 ]
+[v ___ftadd@sign sign `uc  1 a 1 10 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 0 ]
+[v ___ftadd@f2 f2 `f  1 p 3 3 ]
+"148
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 2 ]
+[v ___ftpack@exp exp `uc  1 p 1 5 ]
+[v ___ftpack@sign sign `uc  1 p 1 6 ]
+"86
+} 0
+"196 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\user.c
+[v _adc_convert adc_convert `(ui  1 e 2 0 ]
+{
+[v adc_convert@channel channel `uc  1 a 1 wreg ]
+[v adc_convert@channel channel `uc  1 a 1 wreg ]
+[v adc_convert@channel channel `uc  1 a 1 5 ]
+"201
+} 0
+"21
+[v _InitApp InitApp `(v  1 e 1 0 ]
+{
+"67
+} 0
+"203
+[v _init_pwm init_pwm `(v  1 e 1 0 ]
+{
+"234
+} 0
+"236
+[v _init_timer2 init_timer2 `(v  1 e 1 0 ]
+{
+"241
+} 0
+"243
+[v _init_timer0 init_timer0 `(v  1 e 1 0 ]
+{
+"249
+} 0
+"189
+[v _init_adc init_adc `(v  1 e 1 0 ]
+{
+"194
+} 0
+"74 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\memory.c
+[v _FLASH_WriteWord FLASH_WriteWord `(v  1 e 1 0 ]
+{
+"75
+[v FLASH_WriteWord@blockStartAddr blockStartAddr `ui  1 a 2 13 ]
+"77
+[v FLASH_WriteWord@i i `uc  1 a 1 15 ]
+"76
+[v FLASH_WriteWord@offset offset `uc  1 a 1 12 ]
+"74
+[v FLASH_WriteWord@flashAddr flashAddr `ui  1 p 2 7 ]
+[v FLASH_WriteWord@ramBuf ramBuf `*.6ui  1 p 1 9 ]
+[v FLASH_WriteWord@word word `ui  1 p 2 10 ]
+"89
+} 0
+"91
+[v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
+{
+"92
+[v FLASH_WriteBlock@blockStartAddr blockStartAddr `ui  1 a 2 3 ]
+"94
+[v FLASH_WriteBlock@i i `uc  1 a 1 6 ]
+"93
+[v FLASH_WriteBlock@GIEBitValue GIEBitValue `uc  1 a 1 5 ]
+"91
+[v FLASH_WriteBlock@writeAddr writeAddr `ui  1 p 2 5 ]
+[v FLASH_WriteBlock@flashWordArray flashWordArray `*.6ui  1 p 1 7 ]
+"139
+} 0
+"141
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
+{
+"142
+[v FLASH_EraseBlock@GIEBitValue GIEBitValue `uc  1 a 1 4 ]
+"141
+[v FLASH_EraseBlock@startAddr startAddr `ui  1 p 2 2 ]
+"165
+} 0
+"58
+[v _FLASH_ReadWord FLASH_ReadWord `(ui  1 e 2 0 ]
+{
+"59
+[v FLASH_ReadWord@GIEBitValue GIEBitValue `uc  1 a 1 4 ]
+"58
+[v FLASH_ReadWord@flashAddr flashAddr `ui  1 p 2 2 ]
+"72
+} 0
+"18 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 1 0 ]
+{
+"21
+} 0
+"19 E:\Dropbox (Personal)\Dropbox (Personal)\classic fox files\foxpedal files\Expanse Delay\Code\Expanse.X\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"40
+} 0
